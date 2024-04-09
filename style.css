@@ -1,0 +1,102 @@
+
+h1{
+    font-family: "chorine-large", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 20px;
+    margin-top: 17px;
+    }
+    
+    h1 a{
+        text-decoration: underline;
+        color: black;
+    }
+    
+    header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: white;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        text-align: left;
+      }
+      
+      nav a {
+        text-decoration: underline;
+        color: black;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20pt;
+        font-family: "chorine-large", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+      }
+      
+      nav li {
+        padding: 20px 60px;
+      }
+
+p{
+font-family: "century-gothic", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.div1{
+    position: absolute;
+    top: 65%;
+    width: 47%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.img2{
+    width: 33%;
+    position: absolute;
+    left: 65%;
+    top: 0%;
+    z-index: -10;
+}
+
+video{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+}
+
+@media (max-width: 428px) {
+    h1, nav a {
+        font-size: 16px; /* Smaller font sizes for readability */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items */
+        align-items: center; /* Center-align the navigation items */
+    }
+
+    nav li {
+        padding: 20px; 
+        margin-top: 9px;
+    }
+
+    .div1, .img2, video {
+        position: relative; /* Switch from absolute to relative positioning */
+        width: 90%; /* Make width responsive */
+        left: 5%; /* Center elements */
+        top: auto; /* Reset top positioning */
+        margin-top: 20px; /* Add some spacing */
+        z-index: auto; /* Reset z-index for img2 */
+    }
+
+    video {
+        left: 0; /* Reset left positioning for video to align properly */
+    }
+}
+

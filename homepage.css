@@ -1,0 +1,165 @@
+section {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-flow: dense;
+	width: 100%; 
+    position: absolute;
+    top: 15%;
+    left: 1%;
+}
+
+div:nth-child(3),
+div:nth-child(6) {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+body {
+	font-family: sans-serif;
+	padding: 20px;
+    margin: 0; /* Ensure there are no default margins */
+    padding: 0; /* Ensure there are no default paddings */
+    background-image: radial-gradient(circle, #EFEFEF, #BEBEBE);
+    min-height: 150vh; /* Makes sure the background extends beyond 100vh, adjust as needed */
+    background-attachment: fixed; 
+}
+
+div {
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	padding: 5px;
+    margin: 0;
+    display: flex; /* Added to use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden; 
+    text-align: center;
+}
+
+img{
+    width: 65%;
+    height: auto;
+    display: inline-block
+}
+
+div:nth-child(13),
+div:nth-child(16) {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+div:nth-child(23),
+div:nth-child(26) {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+div:nth-child(33),
+div:nth-child(36) {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+div:nth-child(43),
+div:nth-child(46) {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+/* .eng{
+    height: 50%;
+    width: auto;
+} */
+
+h1{
+    font-family: "chorine-large", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 20px;
+    margin-top: 17px;
+    }
+    
+    h1 a{
+        text-decoration: underline;
+        color: black;
+    }
+    
+    header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: white;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        text-align: left;
+      }
+      
+      nav a {
+        text-decoration: underline;
+        color: black;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20pt;
+        font-family: "chorine-large", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+      }
+      
+      nav li {
+        padding: 20px 60px;
+      }
+
+      /* a:hover{
+        width: 70%
+      } */
+
+      @media (max-width: 428px) {
+        section {
+            grid-template-columns: repeat(2, 1fr); /* Adjust grid to 2 columns for smaller screens */
+            top: 10%;
+            left: 0;
+            width: 100%; /* Ensure it spans the full width */
+        }
+    
+        div, div:nth-child(3), div:nth-child(6),
+        div:nth-child(13), div:nth-child(16),
+        div:nth-child(23), div:nth-child(26),
+        div:nth-child(33), div:nth-child(36),
+        div:nth-child(43), div:nth-child(46) {
+            grid-column: span 1 !important; /* Override any span to ensure single column layout */
+            grid-row: span 1 !important;
+        }
+    
+        img {
+            width: 80%; /* Adjust image size to fit smaller screens better */
+        }
+    
+        nav ul {
+            flex-direction: column; /* Stack nav items vertically */
+            padding: 0; /* Remove padding */
+        }
+    
+        nav li {
+            padding: 10px; /* Reduce padding for nav items */
+            text-align: center; /* Center align the text for nav items */
+        }
+    
+        nav a {
+            font-size: 16pt; /* Adjust font size for smaller screens */
+        }
+    
+        h1 {
+            margin-left: 10px; 
+            font-size: 18pt; 
+        }
+
+        a:hover {
+            width: auto; /* or whatever the width of <a> tags is outside of hover states */
+        }
+    }
